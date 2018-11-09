@@ -1,6 +1,6 @@
 # StarBooks
 
-> Dashboard to track satellite book information
+> Dashboard to monitor StarBooks
 
 ## Quick Start
 
