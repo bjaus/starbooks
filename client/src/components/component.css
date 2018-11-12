@@ -1,0 +1,51 @@
+/* ************************************
+LAYOUT
+*************************************/
+
+header {
+  /* border: 2px solid red; */
+  background-color: #111;
+}
+
+#logo {
+  /* border: 2px solid red; */
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+
+#title {
+  /* border: 2px solid red; */
+  margin: auto;
+}
+
+footer {
+  background-color: #111;
+}
+
+/*************************************
+SEARCH & FILE UPLOAD 
+*************************************/
+#dashboard {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(1px + 1.5vmin);
+  color: white;
+}
+
+/*************************************
+SEARCH & FILE UPLOAD 
+*************************************/
+
+#search-upload {
+  margin-top: 20px;
+}
+
+/*************************************
+TABLE
+************************************ */
