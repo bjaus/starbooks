@@ -101,152 +101,136 @@ class Dashboard extends Component {
   }
 
   render() {
-    // const myData = [
-    //   {
-    //     satellite_id: 42,
-    //     timestamp: "2025-02-14T01:51:44.000Z",
-    //     set_id: 29,
-    //     status: "Ok",
-    //     condition: "Good",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 42,
-    //     timestamp: "2025-02-14T01:51:44.000Z",
-    //     set_id: 30,
-    //     status: "DAMAGED",
-    //     condition: "Debris damage, loss of 50%",
-    //     errors: ["Unknown debris collision"]
-    //   },
-    //   {
-    //     satellite_id: 42,
-    //     timestamp: "2025-02-14T01:51:44.000Z",
-    //     set_id: 31,
-    //     status: "OK",
-    //     condition: "Repaired",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 2018,
-    //     timestamp: "2018-10-20T01:11:44.000Z",
-    //     set_id: 1,
-    //     status: "Not Ok",
-    //     condition: "Bad",
-    //     errors: ["So many", "errors"]
-    //   },
-    //   {
-    //     satellite_id: 2018,
-    //     timestamp: "2018-10-20T01:11:44.000Z",
-    //     set_id: 2,
-    //     status: "DAMAGED",
-    //     condition: "Debris damage, loss of 50%",
-    //     errors: ["Unknown debris collision"]
-    //   },
-    //   {
-    //     satellite_id: 2018,
-    //     timestamp: "2018-10-20T01:11:44.000Z",
-    //     set_id: 3,
-    //     status: "OK",
-    //     condition: "Repaired",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 158,
-    //     timestamp: "2018-10-14T06:18:24.000Z",
-    //     set_id: 1,
-    //     status: "Not Ok",
-    //     condition: "Bad",
-    //     errors: ["So many", "errors"]
-    //   },
-    //   {
-    //     satellite_id: 158,
-    //     timestamp: "2018-10-14T06:18:24.000Z",
-    //     set_id: 2,
-    //     status: "OK",
-    //     condition: "Good",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 158,
-    //     timestamp: "2018-10-14T06:18:24.000Z",
-    //     set_id: 3,
-    //     status: "DAMAGED",
-    //     condition: "Debris damage, loss of 50%",
-    //     errors: ["Unknown debris collision"]
-    //   },
-    //   {
-    //     satellite_id: 158,
-    //     timestamp: "2018-10-14T06:18:24.000Z",
-    //     set_id: 5,
-    //     status: "OK",
-    //     condition: "Repaired",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 169,
-    //     timestamp: "2018-10-14T06:05:04.000Z",
-    //     set_id: 2,
-    //     status: "Broken",
-    //     condition: "Bad",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 169,
-    //     timestamp: "2018-10-14T06:05:04.000Z",
-    //     set_id: 3,
-    //     status: "DAMAGED",
-    //     condition: "Debris damage, loss of 50%",
-    //     errors: ["Unknown debris collision"]
-    //   },
-    //   {
-    //     satellite_id: 169,
-    //     timestamp: "2018-10-14T06:05:04.000Z",
-    //     set_id: 5,
-    //     status: "OK",
-    //     condition: "Repaired",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 69,
-    //     timestamp: "2018-07-13T16:05:04.000Z",
-    //     set_id: 33,
-    //     status: "New",
-    //     condition: "Like New",
-    //     errors: []
-    //   },
-    //   {
-    //     satellite_id: 69,
-    //     timestamp: "2018-07-13T16:05:04.000Z",
-    //     set_id: 100,
-    //     status: "Ok",
-    //     condition: "Great",
-    //     errors: []
-    //   }
-    // ];
-    // const myHead = [
-    //   "Satellite ID",
-    //   "Timestamp",
-    //   "Set ID",
-    //   "Status",
-    //   "Condition",
-    //   "Errors"
-    // ];
+    const myData = [
+      {
+        satellite_id: 42,
+        timestamp: "2025-02-14T01:51:44.000Z",
+        set_id: 29,
+        status: "Ok",
+        condition: "Good",
+        errors: []
+      },
+      {
+        satellite_id: 42,
+        timestamp: "2025-02-14T01:51:44.000Z",
+        set_id: 30,
+        status: "DAMAGED",
+        condition: "Debris damage, loss of 50%",
+        errors: ["Unknown debris collision"]
+      },
+      {
+        satellite_id: 42,
+        timestamp: "2025-02-14T01:51:44.000Z",
+        set_id: 31,
+        status: "OK",
+        condition: "Repaired",
+        errors: []
+      },
+      {
+        satellite_id: 2018,
+        timestamp: "2018-10-20T01:11:44.000Z",
+        set_id: 1,
+        status: "Not Ok",
+        condition: "Bad",
+        errors: ["So many", "errors"]
+      },
+      {
+        satellite_id: 2018,
+        timestamp: "2018-10-20T01:11:44.000Z",
+        set_id: 2,
+        status: "DAMAGED",
+        condition: "Debris damage, loss of 50%",
+        errors: ["Unknown debris collision"]
+      },
+      {
+        satellite_id: 2018,
+        timestamp: "2018-10-20T01:11:44.000Z",
+        set_id: 3,
+        status: "OK",
+        condition: "Repaired",
+        errors: []
+      },
+      {
+        satellite_id: 158,
+        timestamp: "2018-10-14T06:18:24.000Z",
+        set_id: 1,
+        status: "Not Ok",
+        condition: "Bad",
+        errors: ["So many", "errors"]
+      },
+      {
+        satellite_id: 158,
+        timestamp: "2018-10-14T06:18:24.000Z",
+        set_id: 2,
+        status: "OK",
+        condition: "Good",
+        errors: []
+      },
+      {
+        satellite_id: 158,
+        timestamp: "2018-10-14T06:18:24.000Z",
+        set_id: 3,
+        status: "DAMAGED",
+        condition: "Debris damage, loss of 50%",
+        errors: ["Unknown debris collision"]
+      },
+      {
+        satellite_id: 158,
+        timestamp: "2018-10-14T06:18:24.000Z",
+        set_id: 5,
+        status: "OK",
+        condition: "Repaired",
+        errors: []
+      },
+      {
+        satellite_id: 169,
+        timestamp: "2018-10-14T06:05:04.000Z",
+        set_id: 2,
+        status: "Broken",
+        condition: "Bad",
+        errors: []
+      },
+      {
+        satellite_id: 169,
+        timestamp: "2018-10-14T06:05:04.000Z",
+        set_id: 3,
+        status: "DAMAGED",
+        condition: "Debris damage, loss of 50%",
+        errors: ["Unknown debris collision"]
+      },
+      {
+        satellite_id: 169,
+        timestamp: "2018-10-14T06:05:04.000Z",
+        set_id: 5,
+        status: "OK",
+        condition: "Repaired",
+        errors: []
+      }
+    ];
+    const myHead = [
+      "Satellite ID",
+      "Timestamp",
+      "Set ID",
+      "Status",
+      "Condition",
+      "Errors"
+    ];
 
-    // const tData = myData.map(data => {
-    //   let count = -1;
-    //   return (
-    //     <tr>
-    //       {Object.keys(data).map(key => {
-    //         count++;
-    //         return <td key={count}>{data[key]}</td>;
-    //       })}
-    //     </tr>
-    //   );
-    // });
+    const tData = myData.map(data => {
+      let count = -1;
+      return (
+        <tr>
+          {Object.keys(data).map(key => {
+            count++;
+            return <td key={count}>{data[key]}</td>;
+          })}
+        </tr>
+      );
+    });
 
-    // const tHead = myHead.map(head => {
-    //   return <th>{head}</th>;
-    // });
+    const tHead = myHead.map(head => {
+      return <th>{head}</th>;
+    });
 
     return (
       <div id="dashboard" className="container-fluid">
@@ -264,12 +248,12 @@ class Dashboard extends Component {
           </div>
           <div className="col-1" />
         </div>
-        {/* <table>
+        <table className="table table-light table-striped">
           <thead>
             <tr>{tHead}</tr>
           </thead>
           <tbody>{tData}</tbody>
-        </table> */}
+        </table>
         {/* <div id="table" className="row">
           <div className="col-12">
             <Table tblData={this.state.data} tHead={this.state.tHead} />

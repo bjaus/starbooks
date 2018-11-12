@@ -32,9 +32,13 @@ class Search extends Component {
             className="form-control input-lg"
           />
           <select className="form-control" onChange={this.searchSelector}>
-            <option defaultValue="default">Select</option>
-            <option value="status">Status</option>
+            <option defaultValue="default">Select Filter</option>
+            <option value="condition">Condition</option>
             <option value="error">Error</option>
+            <option value="satellite_id">Satellite ID</option>
+            <option value="set_id">Set ID</option>
+            <option value="status">Status</option>
+            <option value="timestamp">Timestamp</option>
           </select>
         </form>
       </div>
